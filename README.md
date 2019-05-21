@@ -66,8 +66,6 @@ To check the available firewall setup run the below command
 [AWS Route53](https://aws.amazon.com/route53/) is used to setup the DNS for the server. Additionally the AWS certificate manager is used to install and manage the ssl certificate for the lightsail server. Amamzon Certificate Manager (ACM) is used to link the certificate with Route53 DNS which is attached to AWS lightsail.
 
 ### Summary of installed software
-
-<b>
 1. apt-get install --assume-yes linux-aws
 2. apt-get install --assume-yes hibagent
 3. apt-get upgrade
@@ -87,7 +85,7 @@ To check the available firewall setup run the below command
 18. apt install libapache2-mod-wsgi-py3
 19. apt-get install ntp
 
-</b>
+
 
 ### Python3 installation and configuration
 Python3 installed using `apt install python3-pip`. Python3 virtual environment used for catalog application. 
@@ -102,14 +100,8 @@ Apache2 installed using the `apt install apache2` command. Additionally `apt ins
 
 - directory is created for catalog app in /var/www folder
 - a wsgi file created to invoke the flask application in /var/www folder
-- git clone the application from github into ubuntu server /var/www application folder, below folder structure
-<b>  
- .
- ..
- CatalogApp
- catalogapp.wsgi
-.git
-</b>
+- git clone the application from github into ubuntu server /var/www application folder
+
 - python virtual env created to install the required python modules
 - a new apache conf file created for this application specifying the home and python path in the WSGIDaemonProcess
   `CatalogApp python-path=/var/www/myapps/CatalogApp/CatalogApp/catalogvenv/lib/python3.5/site-packages home=/var/www/myapps/CatalogApp/CatalogApp`
