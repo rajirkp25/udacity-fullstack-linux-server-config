@@ -38,7 +38,7 @@ Custom Catalog application is hosted in www.mycatalogapp.net running in apache w
 
 ### Accessing via ssh port
 
-Server can be accessed using `grader`. This user has been setup to access the server using ssh, key separately shared. Additionally, grader is givern sudo access to run specific sudo commands.
+Server can be accessed using the user `grader`. This user has been setup to access the server using ssh, key separately shared. Additionally, grader is givern sudo access to run specific sudo commands.
 
 Server IP: 3.15.73.237
 
@@ -63,7 +63,7 @@ To check the available firewall setup run the below command
 
 ### DNS Setup using AWS Route53
 
-[AWS Route53](https://aws.amazon.com/route53/) is used to setup the DNS for the server. Additionally the AWS certificate manager is used to install and manage the ssl certificate for the lightsail server. Amamzon Certificate Manager (ACM) is used to link the certificate with Route53 DNS which is attached to AWS lightsail.
+[AWS Route53](https://aws.amazon.com/route53/) is used to setup the DNS for the server. Additionally the AWS certificate manager is used to install and manage the ssl certificate for the lightsail server. Amazon Certificate Manager (ACM) is used to link the certificate with Route53 DNS which is attached to AWS lightsail.
 
 ### Summary of installed software
 1. apt-get install --assume-yes linux-aws
