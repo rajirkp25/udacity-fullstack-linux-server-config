@@ -197,8 +197,8 @@ Application can be access using [URL](mycatalogapp.net)
 
 ### References
 
-[Amazon Lightsail DNS](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-dns-entry)
-[Apache wsgi configuration](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
-[Python Flask Virtual Environment](http://flask.pocoo.org/docs/1.0/installation/)
-[Ubuntu UFW Setups](https://help.ubuntu.com/community/UFW)
-[Postgresql Setup](https://help.ubuntu.com/lts/serverguide/postgresql.html.en)
+- [Amazon Lightsail DNS](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-dns-entry)
+- [Apache wsgi configuration](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
+- [Python Flask Virtual Environment](http://flask.pocoo.org/docs/1.0/installation/)
+- [Ubuntu UFW Setups](https://help.ubuntu.com/community/UFW)
+- [Postgresql Setup](https://help.ubuntu.com/lts/serverguide/postgresql.html.en)
