@@ -27,6 +27,7 @@ Project: Linux Server Configuration
   - [Security](#security)
     - [The files for catalog application](#the-files-for-catalog-application)
     - [Accessing the application](#accessing-the-application)
+    - [References](#references)
 
 ## Intro
 
@@ -193,3 +194,9 @@ Application can be access using [URL](mycatalogapp.net)
 
 <b>`Note` </b> CRUD operations will work only if the user has logged in to the application
 
+### References
+[Amazon Lightsail DNS](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-dns-entry)
+[Apache wsgi configuration](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
+[Python Flask Virtual Environment](http://flask.pocoo.org/docs/1.0/installation/)
+[Ubuntu UFW Setups](https://help.ubuntu.com/community/UFW)
+[Postgresql Setup](https://help.ubuntu.com/lts/serverguide/postgresql.html.en)
