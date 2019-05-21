@@ -34,7 +34,7 @@ Host the catalog web application in a base lined Linux Server. Application prima
 
 ## Access the application
 
-Custom Catalog [application](www.mycatalogapp.net) is hosted in apache web server using the web service gateway interface.  
+Custom Catalog application is hosted in www.mycatalogapp.net running in apache web server using the web service gateway interface.  
 
 ### Accessing via ssh port
 
