@@ -68,24 +68,24 @@ To check the available firewall setup run the below command
 ### Summary of installed software
 
 <b>
-apt-get install --assume-yes linux-aws
-apt-get install --assume-yes hibagent
-apt-get upgrade
-apt install finger
-apt install git
-apt install python
-apt install apache2
-apt-get install postgresql postgresql-contrib
-apt install python-pip
-apt install python3-pip
-apt-get upgrade python3
-apt-get install build-essential libssl-dev libffi-dev python-dev
-apt install -y python3-venv
-apt-get install libapache2-mod-wsgi
-apt-get install python-psycopg2
-apt-get install libpq-dev
-apt install libapache2-mod-wsgi-py3
-apt-get install ntp
+1. apt-get install --assume-yes linux-aws
+2. apt-get install --assume-yes hibagent
+3. apt-get upgrade
+4. apt install finger
+5. apt install git
+6. apt install python
+7. apt install apache2
+8. apt-get install postgresql postgresql-contrib
+10. apt install python-pip
+11. apt install python3-pip
+12. apt-get upgrade python3
+13. apt-get install build-essential libssl-dev libffi-dev python-dev
+14. apt install -y python3-venv
+15. apt-get install libapache2-mod-wsgi
+16. apt-get install python-psycopg2
+17. apt-get install libpq-dev
+18. apt install libapache2-mod-wsgi-py3
+19. apt-get install ntp
 
 </b>
 
@@ -127,13 +127,13 @@ Postgresql is installed using `apt-get install postgresql postgresql-contrib` co
 `\connect catalog` is used to connect to catalog database. Also, a user named catalog is created with limited access to DB.
 
 <b>
-postgres=# \du
-                                   List of roles
- Role name |                         Attributes                         | Member of
+postgres=# \du <br>
+List of roles <br>
+` Role name |                         Attributes                         | Member of
 -----------+------------------------------------------------------------+-----------
  catalog   |                                                            | {}
  postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
-
+`
 </b>
 
 ## Linux User Management
