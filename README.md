@@ -54,6 +54,10 @@ A new Linux server instance is created in Amazon lightsail using Ubuntu as the c
 
 Server is configured to use the `UTC` local timezone.
 
+Grader ssh configuration
+
+[User grader ssh config](https://github.com/rajirkp25/udacity-fullstack-linux-server-config/ssh.png)
+
 ### Firewall setup
 
 ufw tool is used to setup the required firewall setups in Ubuntu. Connections for ssh, TCP, HTTP, NTP are allowed. Default ssh port is changed as per project requirements.
@@ -61,6 +65,8 @@ ufw tool is used to setup the required firewall setups in Ubuntu. Connections fo
 To check the available firewall setup run the below command
 
 `sudo ufw status verbose`
+
+[ufw status](https://github.com/rajirkp25/udacity-fullstack-linux-server-config/ufw.png)
 
 ### DNS Setup using AWS Route53
 
