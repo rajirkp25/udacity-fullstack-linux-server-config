@@ -37,6 +37,8 @@ Host the catalog web application in a base lined Linux Server. Application prima
 
 Custom Catalog application is hosted in www.mycatalogapp.net running in apache web server using the web service gateway interface.
 
+![Application](app.png)
+
 ### Accessing via ssh port
 
 Server can be accessed using the user `grader`. This user has been setup to access the server using ssh, key separately shared. Additionally, grader is givern sudo access to run specific sudo commands.
@@ -54,10 +56,6 @@ A new Linux server instance is created in Amazon lightsail using Ubuntu as the c
 
 Server is configured to use the `UTC` local timezone.
 
-Grader ssh configuration
-
-[User grader ssh config](https://github.com/rajirkp25/udacity-fullstack-linux-server-config/ssh.png)
-
 ### Firewall setup
 
 ufw tool is used to setup the required firewall setups in Ubuntu. Connections for ssh, TCP, HTTP, NTP are allowed. Default ssh port is changed as per project requirements.
@@ -66,7 +64,7 @@ To check the available firewall setup run the below command
 
 `sudo ufw status verbose`
 
-[ufw status](https://github.com/rajirkp25/udacity-fullstack-linux-server-config/ufw.png)
+![ufw status](ufw.png)
 
 ### DNS Setup using AWS Route53
 
@@ -139,6 +137,10 @@ List of roles <br>
 A new user named grader is created in the server, and can access th server only using ssh enabled port. `ssh-keygen` is used to generate the ssk key pair for grader, shared separately.
 
 Verify the sshd_config file to confirm if password authentication is disabled by checking the property <b>PasswordAuthentication no</b>
+
+<h5><u>Grader ssh configuration</u></h5>
+
+![User grader ssh config](ssh.png)
 
 ### Requirements
 
