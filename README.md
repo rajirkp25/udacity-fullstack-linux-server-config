@@ -35,7 +35,7 @@ Host the catalog web application in a base lined Linux Server. Application prima
 
 ## Access the application
 
-Custom Catalog application is hosted in www.mycatalogapp.net running in apache web server using the web service gateway interface.  
+Custom Catalog application is hosted in www.mycatalogapp.net running in apache web server using the web service gateway interface.
 
 ### Accessing via ssh port
 
@@ -56,7 +56,7 @@ Server is configured to use the `UTC` local timezone.
 
 ### Firewall setup
 
-ufw tool is used to setup the required firewall setups in Ubuntu. Connections for ssh, TCP, HTTP, NTP are allowed. Default ssh port is changed as per project requirements. 
+ufw tool is used to setup the required firewall setups in Ubuntu. Connections for ssh, TCP, HTTP, NTP are allowed. Default ssh port is changed as per project requirements.
 
 To check the available firewall setup run the below command
 
@@ -67,6 +67,7 @@ To check the available firewall setup run the below command
 [AWS Route53](https://aws.amazon.com/route53/) is used to setup the DNS for the server. Additionally the AWS certificate manager is used to install and manage the ssl certificate for the lightsail server. Amazon Certificate Manager (ACM) is used to link the certificate with Route53 DNS which is attached to AWS lightsail.
 
 ### Summary of installed software
+
 1. apt-get install --assume-yes linux-aws
 2. apt-get install --assume-yes hibagent
 3. apt-get upgrade
@@ -75,21 +76,20 @@ To check the available firewall setup run the below command
 6. apt install python
 7. apt install apache2
 8. apt-get install postgresql postgresql-contrib
-10. apt install python-pip
-11. apt install python3-pip
-12. apt-get upgrade python3
-13. apt-get install build-essential libssl-dev libffi-dev python-dev
-14. apt install -y python3-venv
-15. apt-get install libapache2-mod-wsgi
-16. apt-get install python-psycopg2
-17. apt-get install libpq-dev
-18. apt install libapache2-mod-wsgi-py3
-19. apt-get install ntp
-
-
+9. apt install python-pip
+10. apt install python3-pip
+11. apt-get upgrade python3
+12. apt-get install build-essential libssl-dev libffi-dev python-dev
+13. apt install -y python3-venv
+14. apt-get install libapache2-mod-wsgi
+15. apt-get install python-psycopg2
+16. apt-get install libpq-dev
+17. apt install libapache2-mod-wsgi-py3
+18. apt-get install ntp
 
 ### Python3 installation and configuration
-Python3 installed using `apt install python3-pip`. Python3 virtual environment used for catalog application. 
+
+Python3 installed using `apt install python3-pip`. Python3 virtual environment used for catalog application.
 
 `python3 -m venv catalogvenv`
 
@@ -111,7 +111,6 @@ Apache2 installed using the `apt install apache2` command. Additionally `apt ins
 - apache is restarted after the above changes
 - `systemctl status apache2.service` is used to check the apache service status
 - site is verified by passing the dns/ip address in the web browser
-  
 
 ### Postgresql installation and configuration
 
@@ -130,6 +129,7 @@ List of roles <br>
 </b>
 
 ## Linux User Management
+
 A new user named grader is created in the server, and can access th server only using ssh enabled port. `ssh-keygen` is used to generate the ssk key pair for grader, shared separately.
 
 Verify the sshd_config file to confirm if password authentication is disabled by checking the property <b>PasswordAuthentication no</b>
@@ -150,20 +150,21 @@ Verify the sshd_config file to confirm if password authentication is disabled by
   - venv
 
 ## Security
+
 Server security is implemented using Ubuntu's Uncomlicated Firewall (ufw) tool. All packages are up to date and ssh port does not use the default 22 port. Also, UFW is configured for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 
-Application security is configured using google's oauth login and CRUD operations are enabled only whena  user is logged in. As well, current user can perform CRUD only on the catalogs owned by them. Additionally, applications' .git directory is disabled to access via web browser.
+Application security is configured using google's oauth login and CRUD operations are enabled only whena user is logged in. As well, current user can perform CRUD only on the catalogs owned by them. Additionally, applications' .git directory is disabled to access via web browser.
 
 ### The files for catalog application
 
-Inside the linux server /var/www/myapps/CatalogApp/CatalogApp, run the  `ls -lrt`.
+Inside the linux server /var/www/myapps/CatalogApp/CatalogApp, run the `ls -lrt`.
 
 Following folders are in the catalog directory
 
 - static
 - templates
- 
-static folder contains the css and dependent files
+
+static folder contains the css and dependent files.
 
 templates folder contains the html files
 
@@ -171,7 +172,7 @@ templates folder contains the html files
 
 | S.No | File Name           | Usage                                          |
 | ---- | ------------------- | ---------------------------------------------- |
-| 1    | __init__.py         | This file runs the application                 |
+| 1    | **init**.py         | This file runs the application                 |
 | 2    | client_secrets.json | Holds the secret key for google authentication |
 | 3    | database.ini        | Used for postgresql DB initialization          |
 | 4    | database_init.py    | Creates the database with tables               |
@@ -195,6 +196,7 @@ Application can be access using [URL](mycatalogapp.net)
 <b>`Note` </b> CRUD operations will work only if the user has logged in to the application
 
 ### References
+
 [Amazon Lightsail DNS](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-dns-entry)
 [Apache wsgi configuration](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
 [Python Flask Virtual Environment](http://flask.pocoo.org/docs/1.0/installation/)
