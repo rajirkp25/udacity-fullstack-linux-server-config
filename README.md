@@ -166,7 +166,7 @@ Following folders are in the catalog directory
 
 static folder contains the css and dependent files.
 
-templates folder contains the html files
+templates folder contains the html files.
 
 <b> Under the catalog directory, below are important files for the application </b>
 
